@@ -1,4 +1,4 @@
-### 数据结构
+## 数据结构
 
 > 栈
 
@@ -66,7 +66,9 @@ basket.remove(x) //不存在会报错
 basket.discard(x) //不存在不会报错
 ```
 
-### 列表
+## 列表
+
+### 列表基本操作
 
 ```Python
 全0:
@@ -76,13 +78,34 @@ basket.discard(x) //不存在不会报错
     b = list(range(26))
 ```
 
-### 链表
+
+
+### 列表初始化 \*号的bug
+
+```python
+a = [[0]*5]*5
+
+a[0][0] = 3
+
+#结果
+[
+    [3,0,0,0,0],
+    [3,0,0,0,0],
+    [3,0,0,0,0],
+    [3,0,0,0,0],
+    [3,0,0,0,0]
+]
+```
+
+因为\*号可能底层的实现和浅拷贝有关
+
+## 链表
 
 
 
 
 
-### 细节
+## 细节
 
 > class Solution //class 小写
 
@@ -137,3 +160,22 @@ class Solution:
                 return key
 ```
 
+
+
+## \!r
+
+https://docs.python.org/zh-cn/3/library/string.html#format-string-syntax
+
+会先对值调用`repr()`
+
+```python
+return 'Node({!r})'.format(self._value)
+```
+
+
+
+## yield
+
+https://blog.csdn.net/mieleizhi0522/article/details/82142856
+
+https://python3-cookbook.readthedocs.io/zh_CN/latest/c04/p03_create_new_iteration_with_generators.html

@@ -542,7 +542,7 @@ z-index 默认是0
 
 <img src="C:\Users\bixingjian\AppData\Roaming\Typora\typora-user-images\image-20210131213412699.png" alt="image-20210131213412699" style="zoom:67%;" /><img src="C:\Users\bixingjian\AppData\Roaming\Typora\typora-user-images\image-20210131213428052.png" alt="image-20210131213428052" style="zoom:67%;" />
 
-> 清楚float
+> 清除float
 
 clear：
 right：右侧不允许有浮动元素
