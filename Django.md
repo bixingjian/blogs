@@ -35,7 +35,7 @@ pip3 install --user pipenv
 
 #创建文件
 mkdir storefront
-pipenv install django
+pipenv install django # win安装可能出错 关掉vpn后重试
 cd storefront
 
 #activate 虚拟环境 这样用的就是虚拟环境中的python 而不是global的
@@ -64,6 +64,10 @@ python manage.py runserver 9000
   按住command 可以点击链接或者文件夹
 
 - `django-admin` `django-admi manage` 可以查看允许的命令
+
+> pipenv
+
+https://crazygit.wiseturtles.com/2018/01/08/pipenv-tour/
 
 ### 6 vscode python 运行
 
