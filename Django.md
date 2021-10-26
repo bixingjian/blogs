@@ -95,6 +95,12 @@ python manage.py startapp playground
 
 **每创建一个app都要添加到setting.py中的installed app**
 
+> 关于文件的名称 (和传统的前端命名有一些区别)
+
+apps.py == config
+
+views.py  == request handler (controller?, action)  输入一个request->返回一个responce
+
 ### 8 写view
 
 - view是一个request handler的函数
@@ -143,7 +149,13 @@ path("playground/", include("playground/urls"))
 
 > 目标: 在前端显示template, {{}}动态展示信息 {% %}展示逻辑
 
-一般别的语言中的view(展示给用户的), 在django中成为template, 在现实中不是很经常使用template, 我们用django返回data, 不很常返回template
+> 命令的区别
+
+view(别的语言) == template(django)
+
+request handler(别的语言) == view(django)
+
+在现实中不是很经常使用template, 我们用django返回data, 不很常返回template
 
 > 创建template文件夹 
 
@@ -438,3 +450,30 @@ https://www.jianshu.com/p/07a9826898c0
 
 
 <img src="/Users/bixingjian/Library/Application Support/typora-user-images/image-20211014214539653.png" alt="image-20211014214539653" style="zoom:25%;" />
+
+
+
+## 管理站点(admin site)
+
+### 设置管理站点
+
+在`http://127.0.0.1:9000/admin/`都会有一个默认的登录站点
+
+我们可以创建一个用户:
+
+```shell
+python manage.py createsuperuser
+```
+
+
+
+我们之前删除了`django.contrib.sessions`, 现在重新在`installed_app`中添加, 并使用`migrate`来创建数据表单
+
+更改admin的密码: 
+
+```shell
+python manage.py changepassword admin
+```
+
+
+
