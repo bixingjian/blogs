@@ -40,4 +40,10 @@ https://brew.idayer.com/
 - vscode iterm主题显示异常
   https://blog.csdn.net/albertjone/article/details/86760661![image-20211013122925529](https://tva1.sinaimg.cn/large/008i3skNly1gvdkn4e7b9j60te06cmxj02.jpg)
 
-- 
+
+
+## 常用快捷键
+
+- cmd+opt+h+m 最小化
+所有
+所有应用
